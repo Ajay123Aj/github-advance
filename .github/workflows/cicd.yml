@@ -37,6 +37,8 @@ jobs:
 
       - name: Run tests
         run: pytest
+        env:
+          PYTHONPATH: .
 
   # 🔹 3. Build & Push Docker
   build:
